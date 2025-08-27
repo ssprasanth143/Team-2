@@ -1,0 +1,141 @@
+
+*{
+  width:100%;
+}
+.cart-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.cart-sidebar {
+  width: 220px;
+  
+  color: white;
+}
+
+.cart-main {
+  padding: 2rem;
+  flex: 1;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.cart-icon {
+  font-size: 1.8rem;
+  color: #3498db;
+  margin-right: 10px;
+}
+
+.cart-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.cart-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  
+}
+
+.table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #138ab5ff;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: 1rem;
+}
+
+.cart-actions {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.place-order-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 40%;
+}
+
+.place-order-btn:hover {
+  background-color: #2980b9;
+}
+
+.empty-cart {
+  color: #888;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.heading1{
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #3498db;
+}
+
