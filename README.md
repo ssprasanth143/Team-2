@@ -68,6 +68,7 @@ An online platform for users to order medicines/drugs securely. The system suppo
 ### Setup Instructions
 1. *Clone the Repository*
    ```bash
+   https://github.com/ssprasanth143/Team-2
   
 ### Login Admin/Member
 <img width="1920" height="1020" alt="Login" src="https://github.com/user-attachments/assets/dba47ce4-8e6b-4f11-84a0-2cad459e9a8b" />
