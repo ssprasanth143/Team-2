@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f2f4f8;
+}
+
+.manage-drug-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.manage-drug-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+
+.drug-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+}
+
+.drug-form input {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 180px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.drug-form input:focus {
+    outline: none;
+    border-color: #0679ec;
+}
+
+.drug-form button {
+    padding: 10px 16px;
+    background: linear-gradient(90deg, #0679ec 60%, #2980b9 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.drug-form button:hover {
+    background: linear-gradient(90deg, #0679ec 60%, #2471a3 100%);
+}
+
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.drug-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.drug-table th,
+.drug-table td {
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.drug-table th {
+    background-color: #12bed8;
+    color: white;
+    font-weight: 600;
+}
+
+.drug-table img {
+    border-radius: 6px;
+    max-width: 60px;
+    border: 1px solid #ccc;
+}
+
+.no-data {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}
+
+.drug-table td button {
+    margin: 3px;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+
+.edit-btn {
+    background-color: #0277bd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #01579b;
+}
+
+.delete-btn {
+    background-color: #c62828;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #b71c1c;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.update-btn {
+    background-color: #2e7d32;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #9e9e9e;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .drug-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .drug-form input,
+    .drug-form button {
+        width: 100%;
+    }
+
+    .drug-table {
+        font-size: 13px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}

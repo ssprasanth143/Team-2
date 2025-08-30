@@ -1,0 +1,84 @@
+
+.add-member-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.animated-form {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.animated-form label {
+    font-weight: 500;
+    margin-top: 12px;
+    color: #333;
+}
+
+.animated-form input {
+    width: 100%;
+    padding: 10px 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.2s ease-in-out;
+}
+
+.animated-form input:focus {
+    border-color: #0f9ef0;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #0f9ef0 !important;
+    color: #fff !important;
+    font-weight: 600;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0f9ef0 !important;
+}
+
+
+
+.success-msg {
+    margin-top: 15px;
+    color: green;
+    text-align: center;
+    font-weight: 500;
+}

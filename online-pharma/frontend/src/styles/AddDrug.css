@@ -1,0 +1,189 @@
+.add-drug-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px 12px;
+    background-color: #f4f7fa;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin-top: 30px;}
+
+.drug-form {
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(18, 16, 16, 0.08);
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-sizing: border-box;
+}
+
+.form-heading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1179da;
+}
+
+.form-subheading {
+    text-align: center;
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: -8px;
+    margin-bottom: 16px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.drug-form label {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.drug-form input[type="text"],
+.drug-form input[type="number"],
+.drug-form textarea,
+.drug-form input[type="file"] {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: border-color 0.2s ease;
+}
+
+.drug-form input:focus,
+.drug-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 70px;
+}
+
+.image-preview {
+    margin: 8px 0;
+    text-align: center;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 180px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dropzone {
+    border: 2px dashed #ccc;
+    padding: 14px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+    font-size: 13px;
+}
+
+.dropzone:hover {
+    border-color: #007bff;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 6px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.success-msg {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #d4edda;
+    color: #16a938;
+    font-weight: 500;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    text-align: center;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.choose-file-btn {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #1abc9c, #007bff 200% 100%);
+    cursor: pointer;
+}
+
+.choose-file-btn input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.choose-file-btn-label {
+    display: inline-block;
+    padding: 8px 14px;
+    background: linear-gradient(135deg, #1abc9c, #007bff 200% 100%);
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.choose-file-btn:hover .choose-file-btn-label {
+    background-color: #033b77;
+}
